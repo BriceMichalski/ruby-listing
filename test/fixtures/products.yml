@@ -5,4 +5,11 @@ one:
   description: Sing while drinking
   price: 9.99
   user: users(:seller)
-  category_id: 10
+  category_id: 2
+
+two:
+  title: Deux Chevaux
+  description: best bolide ever !
+  price: 678
+  user: users(:seller)
+  category_id: 1

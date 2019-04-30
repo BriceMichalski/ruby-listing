@@ -26,11 +26,14 @@ Rails.application.routes.draw do
         get "locales", to: "locales#index", as: "locales"
         
         #product routes
-        get "product", to: "api#productAll"
-        get 'product/:id', to: "api#productSingle"
+        get 'product', to: 'api#productAll'
+        get 'product/:id', to: 'api#productSingle'
+        post 'product', to: 'api#createProduct'
 
         #user routes
         get "/account", to: "api#profile"
+
+        
     end
   end
 
