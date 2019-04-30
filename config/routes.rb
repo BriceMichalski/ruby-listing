@@ -30,6 +30,9 @@ Rails.application.routes.draw do
         get 'product/:id', to: 'api#productSingle'
         post 'product', to: 'api#createProduct'
 
+        #product routes
+        get 'category', to: 'api#categoryAll'
+
         #user routes
         get "/account", to: "api#profile"
 

@@ -33,6 +33,13 @@ class Api::V1::ApiController < Api::ApiController
             render json: {success: false, error: 'On ne sait pas'} , status: 500
         end
     end 
+    
+    #product methods
+    before_action :checkToken
+    def categoryAll
+        categories = Category.all
+        render json: {success: true, categories: categories} , status: 200 
+    end
 
     #user methods
     before_action :checkToken
