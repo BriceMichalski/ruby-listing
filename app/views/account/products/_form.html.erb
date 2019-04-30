@@ -15,7 +15,7 @@
 <%= text_area_tag 'product[description]', @product.description, class: 'form-control' %>
 
 <label>Price</label>
-<%= number_field_tag 'product[price]', @product.price, class: 'form-control' %>
+<%= number_field_tag 'product[price]', @product.price, class: 'form-control', step: 0.1 %>
 
 <label><%= t('category') %></label>
 <select name="product[category_id]" class="form-control">
