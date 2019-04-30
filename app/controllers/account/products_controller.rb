@@ -46,8 +46,8 @@ class Account::ProductsController < Account::AccountController
       :title,
       :description,
       :price,
-      :picture,
-       {tag_ids: []}
+      :category_id,
+      :picture
     ).merge(user_id: current_user.id)
   end
 end
