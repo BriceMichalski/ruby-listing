@@ -45,9 +45,10 @@ class Account::ProductsController < Account::AccountController
     params.require(:product).permit(
       :title,
       :description,
-      :price,
+
       :category_id,
-      :picture
+      :picture,
+      :price => []
     ).merge(user_id: current_user.id)
   end
 end
