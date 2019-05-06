@@ -34,7 +34,7 @@ class Api::V1::ApiController < Api::ApiController
         end
     end 
     
-    #product methods
+    #category methods
     before_action :checkToken
     def categoryAll
         categories = Category.all
